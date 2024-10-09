@@ -7,12 +7,13 @@
     initial-scale=1.0">
     <title>Mi Currículum Vitae</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
 </head>
 
 <body>
     <header>
         <h1>Sebastian Arguello</h1>
-        <p>Estudiante | sebaescu@espol.edu.ec | 0988485071</p>
+        <p>Estudiante de Ingeniería en Computación| sebaescu@espol.edu.ec | 0988485071</p>
     </header>
     <nav>
         <ul>
@@ -27,27 +28,57 @@
         <section id="resumen">
             <h2>Resumen</h2>
             <p>Breve descripción de tus habilidades y experiencia.</p>
-        </section>
-        <section id="experiencia">
-            <h2>Experiencia</h2>
-        </section>
+        </section>      
         <section id="educacion">
             <h2>Educación</h2>
+            <ul>
+                <li>Bachiller en Ciencias en el Colegio Americano de Guayaquil</li>  
+            </ul>     
+        </section>
+        <section id="Certificados">
+            <h2>Certificados</h2>
+            <ul>
+                <li>Introduction to generative AI by Google</li>
+                <li>Responsive Web Design by FreeCodeCamp</li>
+            </ul>
         </section>
         <section id="habilidades">
             <h2>Habilidades</h2>
+            <ul>
+                <li>HTML</li>
+                <li>MYSQL</li>
+                <li>C</li>
+                <li>Java</li>
+                <li>python</li>
+                <li>CSS</li>
+                <li>C#</li>
+                <li>GIT</li>
+                <li>Kali Linux</li>
+            </ul>
         </section>
         <section id="proyectos">
             <h2>Proyectos</h2>
+            <ul>
+                <li><a href="https://github.com/Sebaescu/ExploCaves">ExploCaves</a></li>
+                <li><a href="https://github.com/Sebaescu/ConejosFibonnacci">ConejosFibonnacci</a></li>
+                <li><a href="https://github.com/Sebaescu/Proyecto2PED">Proyecto2PED</a></li>
+                <li><a href="https://github.com/kimi2123/ProyectoSistemasDeBasesDeDatos">ProyectoSistemasDeBasesDeDatos</a></li>
+                <li><a href="https://github.com/Sebaescu/TareaSistemas1">TareaSistemas1</a></li>
+
+            </ul>
         </section>
     </main>
     <footer>
-        <p>© Sebastian Arguello - 2023</p>
+        <p>© Sebastian Arguello - 2024</p>
         <ul>
-            <li><a href="https://www.linkedin.com/in/tunombre">LinkedIn</a></li>
-            <li><a href="https://github.com/tunombre">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/sebaescu">LinkedIn</a></li>
+            <li><a href="https://github.com/sebaescu">GitHub</a></li>
         </ul>
+        <div id="map" style="width: 600px; height: 400px;"></div>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+        <script src="index.js"></script>
     </footer>
+    
 </body>
 
 </html>
