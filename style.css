@@ -1,0 +1,13 @@
+#foto {
+    text-align: center; /* Centra el contenido dentro del div */
+    margin: 20px 0; /* Agrega un margen vertical para separar de otros elementos */
+}
+
+#foto img {
+    max-width: 100%; /* Hace que la imagen sea responsive */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+#map {
+    width: 600px;  /* Ancho del mapa */
+    height: 400px; /* Alto del mapa */
+}
