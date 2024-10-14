@@ -11,32 +11,6 @@
 </head>
 
 <body>
-    <header>
-        <h1>Sebastian Arguello</h1>
-        <div id="foto">
-            <img src="ProfesionalPhoto.png" alt="Imagen de Sebastian Arguello">
-        </div>
-        <div class="container">
-            <div class="text">
-                <h2 id="tabla-informacion"> <img src="icons8-estudiante-masculino-30.png" alt="Estudiante"> Estudiante de Ingeniería en Computación   <img src="icons8-nuevo-post-30.png" alt="Email"> sebaescu@espol.edu.ec   <img src="icons8-volumen-del-timbre-30.png" alt="Telefono"> 0988485071</h2>
-            </div>
-            <div class="social-icons">
-                <a href="https://sebaescu.github.io/curriculum/#map">
-                    <img src="icons8-marcador-30.png" alt="Ubicacion">
-                </a>
-                <a href="https://github.com/Sebaescu" target="_blank">
-                    <img src="icons8-github-30.png" alt="GitHub">
-                </a>
-                <a href="https://www.linkedin.com/in/sebastian-jesus-arguello-escudero-7b4447219/" target="_blank">
-                    <img src="icons8-linkedin-30.png" alt="LinkedIn">
-                </a>
-                <a href="https://www.instagram.com/sebastian.arguello23/" target="_blank">
-                    <img src="icons8-instagram-30.png" alt="Instagram">
-                </a>
-            </div>
-        </div>     
-    </header>
-    
     <nav id='menu'>
         <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
         <ul>
@@ -54,8 +28,32 @@
           </li>
           <li><a href='https://sebaescu.github.io/curriculum/#habilidades'>Habilidades</a></li>
           <li><a href='https://sebaescu.github.io/curriculum/#contactame'>Contactame</a></li>
+          <li class="social-icons"><a href="mailto:sebaescu@espol.edu.ec">
+            <img src="icons8-nuevo-post-30.png" alt="Email">
+            </a></li>
+            <li class="social-icons"><a href="tel:+593988485071"">
+                <img src="icons8-volumen-del-timbre-30.png" alt="Telefono">
+            </a></li>
+            <li class="social-icons"><a href="https://sebaescu.github.io/curriculum/#map">
+                    <img src="icons8-marcador-30.png" alt="Ubicacion">
+            </a></li>
+             <li class="social-icons"><a href="https://github.com/Sebaescu" target="_blank">
+                    <img src="icons8-github-30.png" alt="GitHub">
+            </a></li> 
+              <li class="social-icons"> <a href="https://www.linkedin.com/in/sebastian-jesus-arguello-escudero-7b4447219/" target="_blank">
+                    <img src="icons8-linkedin-30.png" alt="LinkedIn">
+                </a></li> 
+              <li class="social-icons"><a href="https://www.instagram.com/sebastian.arguello23/" target="_blank">
+                    <img src="icons8-instagram-30.png" alt="Instagram">
+                </a></li>  
         </ul>
     </nav>
+    <header>
+        <div id="foto">
+            <img src="ProfesionalPhoto-Photoroom.png" alt="Imagen de Sebastian Arguello">
+        </div> 
+        <h1>Sebastian Arguello</h1>   
+    </header>
     <main>
         <section id="resumen">
             <h2>Resumen</h2>
@@ -73,20 +71,115 @@
                 <li>Introduction to generative AI by Google</li>
             </ul>
         </section>
-        <section id="habilidades">
-            <h2>Habilidades</h2>
-            <ul>
-                <li>HTML</li>
-                <li>MYSQL</li>
-                <li>C</li>
-                <li>Java</li>
-                <li>python</li>
-                <li>CSS</li>
-                <li>C#</li>
-                <li>GIT</li>
-                <li>Kali Linux</li>
-            </ul>
+
+        <section id="habilidades-tecnicas">
+            <h2>Habilidades Técnicas</h2>
+        
+            <!-- Lenguajes de Programación -->
+            <div class="skills-category">
+                <h3>Lenguajes de Programación</h3>
+                <div class="skills-container">
+                    <div class="skill">
+                        <img src="java.png" alt="Java Logo">
+                        <div class="progress-bar-container">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%;"></div>
+                            </div>
+                            <span class="progress-percentage">90%</span>
+                        </div>
+                    </div>
+        
+                    <div class="skill">
+                        <img src="python.png" alt="Python Logo">
+                        <div class="progress-bar-container">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%;"></div>
+                            </div>
+                            <span class="progress-percentage">85%</span>
+                        </div>
+                    </div>
+        
+                    <div class="skill">
+                        <img src="mysql.png" alt="MySQL Logo">
+                        <div class="progress-bar-container">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%;"></div>
+                            </div>
+                            <span class="progress-percentage">80%</span>
+                        </div>
+                    </div>
+        
+                    <div class="skill">
+                        <img src="c.png" alt="C Logo">
+                        <div class="progress-bar-container">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 65%;"></div>
+                            </div>
+                            <span class="progress-percentage">65%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Frameworks -->
+            <div class="skills-category">
+                <h3>Frameworks</h3>
+                <div class="skills-container">
+                    <div class="skill">
+                        <img src="nodejs.png" alt="Node.js Logo">
+                        <div class="progress-bar-container">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%;"></div>
+                            </div>
+                            <span class="progress-percentage">75%</span>
+                        </div>
+                    </div>
+        
+                    <!-- Puedes añadir más frameworks aquí -->
+                </div>
+            </div>
+        
+            <!-- Herramientas -->
+            <div class="skills-category">
+                <h3>Herramientas</h3>
+                <div class="skills-container">
+                    <div class="skill">
+                        <img src="kaliLinux.png" alt="Kali Linux Logo">
+                        <div class="progress-bar-container">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 70%;"></div>
+                            </div>
+                            <span class="progress-percentage">70%</span>
+                        </div>
+                    </div>
+        
+                    <div class="skill">
+                        <img src="git.png" alt="Git Logo">
+                        <div class="progress-bar-container">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%;"></div>
+                            </div>
+                            <span class="progress-percentage">85%</span>
+                        </div>
+                    </div>
+        
+                    <div class="skill">
+                        <img src="Unity-logo.png" alt="Unity Logo">
+                        <div class="progress-bar-container">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 60%;"></div>
+                            </div>
+                            <span class="progress-percentage">60%</span>
+                        </div>
+                    </div>
+        
+                    <!-- Puedes añadir más herramientas aquí -->
+                </div>
+            </div>
+        
         </section>
+        
+        
         <section id="proyectos">
             <h2>Proyectos</h2>
             <ul>
