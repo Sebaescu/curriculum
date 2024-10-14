@@ -14,18 +14,46 @@
     <header>
         <h1>Sebastian Arguello</h1>
         <div id="foto">
-            <img src="https://placehold.co/400x400" alt="Imagen de Sebastian Arguello">
+            <img src="ProfesionalPhoto.png" alt="Imagen de Sebastian Arguello">
         </div>
-        <p>Estudiante de Ingeniería en Computación | sebaescu@espol.edu.ec | 0988485071</p>       
+        <div class="container">
+            <div class="text">
+                <h2 id="tabla-informacion"> <img src="icons8-estudiante-masculino-30.png" alt="Estudiante"> Estudiante de Ingeniería en Computación   <img src="icons8-nuevo-post-30.png" alt="Email"> sebaescu@espol.edu.ec   <img src="icons8-volumen-del-timbre-30.png" alt="Telefono"> 0988485071</h2>
+            </div>
+            <div class="social-icons">
+                <a href="https://sebaescu.github.io/curriculum/#map">
+                    <img src="icons8-marcador-30.png" alt="Ubicacion">
+                </a>
+                <a href="https://github.com/Sebaescu" target="_blank">
+                    <img src="icons8-github-30.png" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/sebastian-jesus-arguello-escudero-7b4447219/" target="_blank">
+                    <img src="icons8-linkedin-30.png" alt="LinkedIn">
+                </a>
+                <a href="https://www.instagram.com/sebastian.arguello23/" target="_blank">
+                    <img src="icons8-instagram-30.png" alt="Instagram">
+                </a>
+            </div>
+        </div>     
     </header>
     
-    <nav>
+    <nav id='menu'>
+        <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
         <ul>
-            <li><a href="#resumen">Resumen</a></li>
-            <li><a href="#experiencia">Experiencia</a></li>
-            <li><a href="#educacion">Educación</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href='https://sebaescu.github.io/curriculum/' >Home</a></li>
+          <li><a href='https://sebaescu.github.io/curriculum/#resumen'>Resumen</a></li>
+          <li><a href='https://sebaescu.github.io/curriculum/#educacion' >Educación</a></li>
+          <li><a class='dropdown-arrow' href='https://sebaescu.github.io/curriculum/#proyectos' >Proyectos</a>
+            <ul class='sub-menus'>
+              <li><a href='https://github.com/Sebaescu/ExploCaves' target="_blank">ExploCaves</a></li>
+              <li><a href='https://github.com/Sebaescu/ConejosFibonnacci' target="_blank">Los Conejos de Fibonnaci</a></li>
+              <li><a href='https://github.com/Sebaescu/Proyecto2PED' target="_blank">Tic Tac Toe</a></li>
+              <li><a href='https://github.com/kimi2123/ProyectoSistemasDeBasesDeDatos' target="_blank">Sistema de Pedidos de Veterinaria</a></li>
+              <li><a href='https://github.com/Sebaescu/TareaSistemas1' target="_blank">Administrador de Tienda</a></li>
+            </ul>
+          </li>
+          <li><a href='https://sebaescu.github.io/curriculum/#habilidades'>Habilidades</a></li>
+          <li><a href='https://sebaescu.github.io/curriculum/#contactame'>Contactame</a></li>
         </ul>
     </nav>
     <main>
@@ -43,7 +71,6 @@
             <h2>Certificados</h2>
             <ul>
                 <li>Introduction to generative AI by Google</li>
-                <li>Responsive Web Design by FreeCodeCamp</li>
             </ul>
         </section>
         <section id="habilidades">
@@ -73,29 +100,27 @@
         </section>
     </main>
     <footer>
-        <p>© Sebastian Arguello - 2024</p>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/sebaescu">LinkedIn</a></li>
-            <li><a href="https://github.com/sebaescu">GitHub</a></li>
-        </ul>
+        <form>
+            <h2 id="contactame">Contactame:</h2>
+            <label for="nombre">Nombre Completo:</label><br>
+            <input type="text" id="nombre" name="nombre" placeholder="Su nombre..." required><br><br>
+            
+            <label for="email">Correo Electrónico:</label><br>
+            <input type="email" id="email" name="email" placeholder="Su email..."><br><br>
+            
+            <label for="asunto">Asunto:</label><br>
+            <input type="text" id="asunto" name="asunto" rows="1" placeholder="El asunto..." required></textarea><br><br>
+            
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Mensaje..." required></textarea><br><br>
+            
+            <button type="submit">Enviar</button>
+        </form>
+        <br><br>
         <div id="map"></div>
         <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
         <script src="index.js"></script>
-        <form>
-            <label for="nombre">Nombre Completo:</label><br>
-            <input type="text" id="nombre" name="nombre" required><br><br>
-            
-            <label for="email">Correo Electrónico:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-            
-            <label for="asunto">Asunto:</label><br>
-            <input type="text" id="asunto" name="asunto" rows="1" required></textarea><br><br>
-            
-            <label for="mensaje">Mensaje:</label><br>
-            <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br><br>
-            
-            <button type="submit">Enviar</button>
-        </form>        
+        <p>© Sebastian Arguello - 2024</p>     
     </footer>
     
 </body>
