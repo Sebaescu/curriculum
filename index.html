@@ -14,19 +14,20 @@
     <nav id='menu'>
         <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
         <ul>
-          <li><a href='https://sebaescu.github.io/curriculum/' >Home</a></li>
           <li><a href='https://sebaescu.github.io/curriculum/#resumen'>Resumen</a></li>
           <li><a href='https://sebaescu.github.io/curriculum/#educacion' >Educación</a></li>
           <li><a href='https://sebaescu.github.io/curriculum/#proyectos' >Proyectos</a>         
           </li>
           <li><a href='https://sebaescu.github.io/curriculum/#habilidades'>Habilidades</a></li>
-          <li><a href='https://sebaescu.github.io/curriculum/#contactame'>Contactame</a></li>
+          <li><a href='https://sebaescu.github.io/curriculum/#contactame'>Contáctame</a></li>
           <li class="social-icons sin-fondo"><a href="mailto:sebaescu@espol.edu.ec">
             <img src="icons8-nuevo-post-30.png" alt="Email">
             </a></li>
-            <li class="social-icons sin-fondo"><a href="tel:+593988485071"">
-                <img src="icons8-volumen-del-timbre-30.png" alt="Telefono">
-            </a></li>
+            <li class="social-icons sin-fondo">
+                <a href="https://wa.me/593988485071" target="_blank">
+                    <img src="whatsapp.png" alt="WhatsApp">
+                </a>
+            </li>            
             <li class="social-icons sin-fondo"><a href="https://sebaescu.github.io/curriculum/#map">
                     <img src="icons8-marcador-30.png" alt="Ubicacion">
             </a></li>
@@ -45,21 +46,21 @@
         <div id="foto">
             <img src="ProfesionalPhoto-Photoroom.png" alt="Imagen de Sebastian Arguello">
         </div> 
-        <div class="h1-container">
-        <h1>Sebastian Arguello</h1> 
-        </div>  
+        <h1>Sebastian Argüello</h1>  
     </header>
     <main>
         <section id="resumen" class="section-container">
-            <h2>Resumen</h2>
-            <p>Breve descripción de tus habilidades y experiencia.</p>
-        </section>      
+            <h2>Acerca de mí</h2>
+            <p>
+                Estudiante de Ingeniería en Computación con <span class="highlight">experiencia académica</span> en programación, desarrollo de software y bases de datos. He trabajado en proyectos personales con Unity y Java, desarrollando videojuegos y entornos interactivos, lo que me ha permitido aplicar habilidades prácticas en el campo. Destaco por mi <span class="highlight">capacidad para adaptarme rápidamente</span> a nuevos entornos y tecnologías, así como por mi <span class="highlight">enfoque proactivo</span> en la resolución de problemas. Familiarizado con metodologías ágiles y <span class="highlight">buenas prácticas de desarrollo</span>, busco oportunidades para aplicar mis conocimientos en entornos profesionales y contribuir al éxito de proyectos tecnológicos.
+            </p>
+        </section>        
         <section id="educacion" class="section-container">
             <h2>Educación</h2>
             <ul>
-                <li>Bachiller en Ciencias en el Colegio Americano de Guayaquil</li> 
                 <li>Estudiante de Ingenieria en Computación en ESPOL</li>
-                    <li>Ingles C1</li>
+                <li>Bachiller en Ciencias en el Colegio Americano de Guayaquil</li> 
+                    <li>Ingles C2</li>
                     <li>Alemán B2</li>
             </ul>     
         </section>
@@ -67,7 +68,7 @@
             <h2>Certificados</h2>
             <ul>
                 <li>Introduction to generative AI by Google</li>
-                <li>IB Certificate English</li>
+                <li>IB HL Certificate English</li>
                 <li>DeutschAkademie B2.2 Kursbestätigung</li>
             </ul>
         </section>
@@ -211,52 +212,77 @@
         </section>
         
         
-        <section id="proyectos" class="section-container">
+        <section id="proyectos" class="section-container no-hover">
             <h2>Proyectos</h2>
-            <ul>
-                <li><a href="https://github.com/Sebaescu/ExploCaves">ExploCaves</a></li>
-                <li><a href="https://github.com/Sebaescu/ConejosFibonnacci">ConejosFibonnacci</a></li>
-                <li><a href="https://github.com/Sebaescu/Proyecto2PED">Proyecto2PED</a></li>
-                <li><a href="https://github.com/kimi2123/ProyectoSistemasDeBasesDeDatos">ProyectoSistemasDeBasesDeDatos</a></li>
-                <li><a href="https://github.com/Sebaescu/TareaSistemas1">TareaSistemas1</a></li>
-
-            </ul>
-        </section>
+            <section class="sub-section">
+                <div class="skills-category">
+                    <div class="proyectos-container">
+                        <div class="proyectos">
+                            <a href="https://github.com/Sebaescu/ExploCaves" target="_blank">
+                                <img src="explocaves.png" alt="ExploCaves">
+                            </a>
+                        </div>
+                        <div class="proyectos">
+                            <a href="https://github.com/Sebaescu/ConejosFibonnacci" target="_blank">
+                                <img src="fibonacci.png" alt="Conejos Fibonacci">
+                            </a>
+                        </div>
+                        <div class="proyectos">
+                            <a href="https://github.com/Sebaescu/Proyecto2PED" target="_blank">
+                                <img src="TicTacToe.png" alt="TicTacToe">
+                            </a>
+                        </div>
+                        <div class="proyectos">
+                            <a href="https://github.com/kimi2123/ProyectoSistemasDeBasesDeDatos" target="_blank">
+                                <img src="BaseDatos.png" alt="Proyecto Sistemas de Bases de Datos">
+                            </a>
+                        </div>
+                        <div class="proyectos">
+                            <a href="https://github.com/Sebaescu/TareaSistemas1" target="_blank">
+                                <img src="Tienda.png" alt="Tienda">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
     </main>
     <footer>
-            <form action="#" method="post">
-                <h2 id="contactame">Contactame:</h2><br>
+        <div class="form-map-container">
+            <form action="#" method="post" class="contact-form">
+                <h2 id="contactame">Contáctame:</h2><br>
                 <div class="form-group">
                     <label for="name">Nombre Completo:</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="name" placeholder="Ejem: Sebastian Arguello" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Correo Electrónico:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" placeholder="Ejem: sebaescu@espol.edu.ec" required>
                 </div>
                 <div class="form-group">
                     <label for="asunto">Asunto:</label>
-                    <input type="text" id="asunto" name="asunto" required>
+                    <input type="text" id="asunto" name="asunto" placeholder="Ejem: Diseño pagina web" required>
                 </div>
                 <div class="form-group">
                     <label for="message">Mensaje:</label>
-                    <textarea id="message" name="message" required></textarea>
+                    <textarea id="message" name="message" placeholder="Me gustaria hacerte una oferta..." required></textarea>
                 </div>
                 <div class="form-group-submit">
-                <button type="submit">Enviar</button>
-            </div>
-            </form>
-        <br>
-        <section class="section-container cambio-ancho">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form><br>
+            <h2>Puedes encontrarme aqui</h2>
+    
             <div class="map-container">
-        <div id="map">
-        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+                <div id="map"></div>
+                <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
         <script src="index.js"></script>
+            </div>
         </div>
-    </div>
-    </section>
+    
+        <div class="copyright">
+            <p >© Sebastian Argüello - 2024</p>
+        </div>
         
-        <label id="copyright">© Sebastian Arguello - 2024</label>     
     </footer>
     
 </body>

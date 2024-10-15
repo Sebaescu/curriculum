@@ -1,6 +1,7 @@
 :root{
     color: #ece9e1;
     background-color: #2d2d2d;
+    font-family: 'Courier New', Courier, monospace;
 }
 #foto {
     text-align: center; /* Centra el contenido dentro del div */
@@ -24,23 +25,13 @@
 }
 h1{
     text-align: center;
-	color: #2d2d2d;
-	font-size: 40px;
+	color: #ece9e1;
+	font-size: 70px;
+    font-weight: 600;
+    text-shadow: 0px 0px 5px #c2b697, 0px 0px 10px #c2b697, 0px 0px 10px #c2b697,
+    0px 0px 20px #c2b697;
 }
-.h1-container {
-    display: block; /* Mantiene cada sección en su propia línea */
-    background-color: #ece9e1;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 20px auto; /* Centra las secciones en la página */
-    max-width: 400px; /* Limita el ancho máximo del contenedor */
-    width: 30%; /* Asegura que se ajuste bien en pantallas pequeñas */
-    transition: transform 0.3s ease;
-	height: 100px;
-	min-width: 100px;
-	text-align: center;
-}
+
 #menu {
     background: #ece9e1;
     height: 80px;
@@ -228,28 +219,27 @@ h1{
     transition: transform 0.3s; /* Suave transformación en hover */
 }
 h2,p,li {
-    margin-bottom: 10px;
     color: #2d2d2d;
 }
 h3{
 	font-size: x-large;
 	color: #ece9e1;
+    text-shadow: 0px 0px 5px #c2b697, 0px 0px 10px #c2b697, 0px 0px 10px #c2b697,
+    0px 0px 20px #c2b697;
 }
 .no-hover:hover {
     transform: none; /* Desactiva el efecto de hover */
 }
-/* Estilos generales del formulario */
 /* Estilos generales del formulario */
 form {
     background-color: #ece9e1;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    font-family: 'Arial', sans-serif;
     margin-bottom: 20px;
     max-width: 600px;
 	max-height: 800px;
-    margin: 0 auto; /* Centra el formulario */
+    margin: 20px auto; /* Centra el formulario */
 }
 
 /* Estilo de los labels con fuente bold */
@@ -339,12 +329,59 @@ form h2{
     align-items: center;     /* Centra el contenido verticalmente si es necesario */
     width: 100%;
 }
-#copyright{
+.copyright p{
 	color: #ece9e1;
+    text-align: center;
 }
 h2{
 	font-size: xx-large;
+    text-shadow: 0px 0px 10px #6c6c6c, 0px 0px 10px #6c6c6c, 0px 0px 10px #6c6c6c,
+    0px 0px 20px #6c6c6c;
 }
-li{
+li,p{
 	font-size: large;
+}
+.proyectos {
+    background-color: #ece9e1; /* Fondo de la imagen */
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.proyectos img {
+    max-width: 250px;
+    max-height: 250px;
+    transition: transform 0.3s ease;
+}
+
+.proyectos:hover img {
+    transform: scale(1.05); /* Agranda la imagen ligeramente */
+}
+.proyectos-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.form-map-container{
+    display: block; /* Mantiene cada sección en su propia línea */
+    background-color: #ece9e1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin:auto; /* Centra las secciones en la página */
+    max-width: 800px; /* Limita el ancho máximo del contenedor */
+    width: 90%; /* Asegura que se ajuste bien en pantallas pequeñas */
+    transition: transform 0.3s ease;
+	min-width: 300px;
+    text-align: center;
+}
+.highlight {
+    font-weight: bold; /* Pone el texto en negrita */
+    color: #43BEE5;   /* Cambia el color del texto */
 }
