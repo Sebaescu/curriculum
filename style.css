@@ -1,26 +1,26 @@
 :root{
-    color: #ece9e1;
+    color: #2d2d2d;
     background-color: #2d2d2d;
     font-family: 'Courier New', Courier, monospace;
 }
 #foto {
-    text-align: center; /* Centra el contenido dentro del div */
-    margin: 20px 0; /* Agrega un margen vertical para separar de otros elementos */
+    text-align: center;
+    margin: 20px 0; 
 	 
 }
 
 #foto img {
-    max-width: 100%; /* Hace que la imagen sea responsive */
-    height: auto; /* Mantiene la proporción de la imagen */
-    border-radius: 50%; /* Hace que la imagen sea circular */
-    border: 3px solid #ece9e1; /* Añade un borde de 2px y color #ece9e1 */
-    padding: 2px; /* Opcional: agrega un poco de espacio entre la imagen y el borde */
-    box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el tamaño total */
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 50%; 
+    border: 3px solid #ece9e1;
+    padding: 2px; 
+    box-sizing: border-box;
 }
 
 #map {
     width: 100%;
-    max-width: 600px; /* Máximo de 600px pero adaptable a pantallas pequeñas */
+    max-width: 95%; 
     height: 400px;
 }
 h1{
@@ -35,46 +35,46 @@ h1{
 #menu {
     background: #ece9e1;
     height: 80px;
-    padding: 0 18px; /* Padding horizontal */
+    padding: 0 18px; 
     border-radius: 10px;
     display: flex;
-    align-items: center; /* Centra el contenido verticalmente */
+    align-items: center;
 }
 
 #menu ul {
     display: flex;
-    width: 100%; /* Asegura que ocupe todo el ancho */
-    justify-content: space-between; /* Espacio uniforme entre los elementos */
+    width: 100%; 
+    justify-content: space-between;
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
 #menu li {
-    flex-grow: 1; /* Permite que cada elemento ocupe el mismo espacio */
+    flex-grow: 1; 
 }
 
 #menu a {
-    display: flex; /* Cambia a flex para alinear verticalmente */
-    align-items: center; /* Centra verticalmente el texto */
-    height: 80px; /* Asegura la misma altura que el menú */
+    display: flex;
+    align-items: center;
+    height: 80px; 
     padding: 0 14px;
     text-decoration: none;
     color: #3d3d3d;
     font-size: 30px;
-    text-align: center; /* Centra el texto horizontalmente */
+    text-align: center;
 }
 
 .social-icons {
-    display: flex; /* Asegúrate de que los iconos estén en una fila */
-    align-items: center; /* Centrar iconos verticalmente */
-    margin-left: auto; /* Mueve los iconos al extremo derecho */
+    display: flex; 
+    align-items: center;
+    margin-left: auto; 
 }
 
 .social-icons img {
-    width: 30px; /* Ajusta el tamaño de los iconos */
-    height: 30px; /* Ajusta el tamaño de los iconos */
-    margin: 0 10px; /* Espacio entre los iconos */
+    width: 30px; 
+    height: 30px;
+    margin: 0 10px;
     transition: transform 0.3s;
 }
 
@@ -82,7 +82,7 @@ h1{
 .social-icons img:hover {
     color: #43BEE5;
     background: #F0F8FF;
-    transform: scale(1.1); /* Efecto de aumento al pasar el mouse */
+    transform: scale(1.1);
 }
 
 
@@ -113,22 +113,22 @@ h1{
 
 @media screen and (max-width: 800px) {
     #menu {
-        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
-        align-items: flex-start; /* Alinear a la izquierda */
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     #menu ul {
         background: #444444;
-        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
-        display: none; /* Ocultar el menú por defecto */
+        flex-direction: column; 
+        display: none;
     }
 
     #menu input:checked ~ ul {
-        display: flex; /* Mostrar menú cuando el checkbox está marcado */
+        display: flex;
     }
 
     #menu li {
-        width: 100%; /* Asegurar que los elementos ocupen el 100% del ancho */
+        width: 100%;
     }
 }
 
@@ -142,19 +142,19 @@ h1{
 }
 
 .skill {
-    background-color: #ece9e1; /* Fondo para cada skill */
+    background-color: #ece9e1; 
     padding: 20px;
-    border-radius: 10px; /* Bordes redondeados */
+    border-radius: 10px; 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
 }
 
 .skill:hover {
-    transform: scale(1.05); /* Efecto al pasar el mouse */
+    transform: scale(1.05); 
 }
 
 .skill img {
@@ -183,7 +183,7 @@ h1{
 
 .progress {
     height: 100%;
-    background-color: #2d2d2d; /* Color de la barra de progreso */
+    background-color: #2d2d2d;
     border-radius: 7px;
 }
 
@@ -193,14 +193,14 @@ h1{
     font-size: 1em;
 }
 .section-container {
-    display: block; /* Mantiene cada sección en su propia línea */
+    display: block; 
     background-color: #ece9e1;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 20px auto; /* Centra las secciones en la página */
-    max-width: 800px; /* Limita el ancho máximo del contenedor */
-    width: 90%; /* Asegura que se ajuste bien en pantallas pequeñas */
+    margin: 20px auto;
+    max-width: 800px;
+    width: 90%; 
     transition: transform 0.3s ease;
 	min-width: 300px;
 }
@@ -208,18 +208,15 @@ h1{
 	max-width: 600px;
 }
 .section-container:hover {
-    transform: scale(1.02); /* Efecto al pasar el mouse */
+    transform: scale(1.02);
 }
 .sub-section{
-	background-color: #2d2d2d; /* Fondo */
+	background-color: #2d2d2d;
     padding: 20px;
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    margin-bottom: 20px; /* Separación entre secciones */
-    transition: transform 0.3s; /* Suave transformación en hover */
-}
-h2,p,li {
-    color: #2d2d2d;
+    border-radius: 10px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; 
+    transition: transform 0.3s;
 }
 h3{
 	font-size: x-large;
@@ -228,9 +225,9 @@ h3{
     0px 0px 20px #c2b697;
 }
 .no-hover:hover {
-    transform: none; /* Desactiva el efecto de hover */
+    transform: none; 
 }
-/* Estilos generales del formulario */
+
 form {
     background-color: #ece9e1;
     padding: 20px;
@@ -239,19 +236,17 @@ form {
     margin-bottom: 20px;
     max-width: 600px;
 	max-height: 800px;
-    margin: 20px auto; /* Centra el formulario */
+    margin: 20px auto;
 }
 
-/* Estilo de los labels con fuente bold */
 form label {
     font-weight: bold;
     font-size: 16px;
     display: block;
     margin-bottom: 10px;
-    color: #333; /* Texto más oscuro para buen contraste */
+    color: #333; 
 }
 
-/* Estilo de los inputs y textarea */
 form input[type="text"],
 form input[type="email"],
 form textarea {
@@ -262,12 +257,11 @@ form textarea {
     border: 1px solid #ccc;
     font-size: 14px;
     box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9; /* Fondo suave */
+    background-color: #f9f9f9;
     color: #333;
     transition: all 0.3s ease;
 }
 
-/* Cambia el borde al hacer focus */
 form input[type="text"]:focus,
 form input[type="email"]:focus,
 form textarea:focus {
@@ -275,10 +269,9 @@ form textarea:focus {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo del botón de envío alineado a la derecha */
 form button[type="submit"] {
-    background-color: #333; /* Botón oscuro */
-    color: #fff; /* Texto blanco */
+    background-color: #333;
+    color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -288,31 +281,27 @@ form button[type="submit"] {
     transition: background-color 0.3s ease;
 }
 
-/* Efecto hover en el botón */
 form button[type="submit"]:hover {
     background-color: #555;
 }
 form .form-group-submit {
-    text-align: right; /* Alinea el contenido (botón) a la derecha */
+    text-align: right;
 }
 
-/* Espaciado para cada campo del formulario */
 .form-group {
     margin-bottom: 20px;
-    clear: both; /* Asegura que cada grupo esté en su propia línea */
+    clear: both; 
 }
 .form-group label{
 	font-size: large;
 	font-weight: bold;
 }
 
-/* Estilo del textarea */
 form textarea {
-    height: 150px; /* Altura del área de texto */
+    height: 150px;
     resize: vertical;
 }
 
-/* Estilo del input al hacer hover */
 form input[type="text"]:hover,
 form input[type="email"]:hover,
 form textarea:hover {
@@ -325,8 +314,7 @@ form h2{
 }
 .map-container {
     display: flex;
-    justify-content: center; /* Centra el mapa horizontalmente */
-    align-items: center;     /* Centra el contenido verticalmente si es necesario */
+    align-items: center;      
     width: 100%;
 }
 .copyright p{
@@ -342,14 +330,14 @@ li,p{
 	font-size: large;
 }
 .proyectos {
-    background-color: #ece9e1; /* Fondo de la imagen */
+    background-color: #ece9e1;
     padding: 20px;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: transform 0.3s ease;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 .proyectos img {
@@ -359,7 +347,7 @@ li,p{
 }
 
 .proyectos:hover img {
-    transform: scale(1.05); /* Agranda la imagen ligeramente */
+    transform: scale(1.05);
 }
 .proyectos-container{
     display: grid;
@@ -369,19 +357,19 @@ li,p{
     margin-right: 20px;
 }
 .form-map-container{
-    display: block; /* Mantiene cada sección en su propia línea */
+    display: block;
     background-color: #ece9e1;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    margin:auto; /* Centra las secciones en la página */
-    max-width: 800px; /* Limita el ancho máximo del contenedor */
-    width: 90%; /* Asegura que se ajuste bien en pantallas pequeñas */
+    margin:auto; 
+    max-width: 800px;
+    width: 90%; 
     transition: transform 0.3s ease;
 	min-width: 300px;
     text-align: center;
 }
 .highlight {
-    font-weight: bold; /* Pone el texto en negrita */
-    color: #43BEE5;   /* Cambia el color del texto */
+    font-weight: bold;
+    color: #43BEE5;  
 }
